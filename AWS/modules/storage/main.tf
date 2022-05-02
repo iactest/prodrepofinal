@@ -17,7 +17,7 @@ resource "aws_s3_bucket" "mfadelete" {
   bucket = "examplebuckettftest"
   acl    = var.private
   versioning {
-    mfa_delete = false
+    mfa_delete = true
   }
   logging {
     target_bucket = aws_s3_bucket.log_bucket.id
