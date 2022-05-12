@@ -18,10 +18,6 @@ resource "aws_s3_bucket" "logging" {
   bucket = "examplebuckettftest"
 }
 
-resource "aws_s3_bucket" "loggingBranch" {
-  bucket = "examplebuckettftestB"
-}
-
 resource "aws_s3_bucket" "loggingBranchC" {
   bucket = "examplebuckettftestC"
 }
