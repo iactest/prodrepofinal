@@ -22,6 +22,10 @@ resource "aws_s3_bucket" "loggingBranch" {
   bucket = "examplebuckettftestB"
 }
 
+resource "aws_s3_bucket" "loggingBranchC" {
+  bucket = "examplebuckettftestC"
+}
+
 resource "aws_s3_bucket" "mfadelete" {
   bucket = "examplebuckettftest"
   acl    = var.private
