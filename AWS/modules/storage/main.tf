@@ -22,6 +22,7 @@ resource "aws_s3_bucket" "mfadelete" {
   bucket = "examplebuckettftest"
   acl    = var.private
   versioning {
+    enabled = true
     mfa_delete = true
   }
   logging {
